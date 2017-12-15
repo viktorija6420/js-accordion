@@ -4,14 +4,14 @@ const questions = accordion.querySelectorAll('.question');
 
 function toggleAccordion(){
   const thisItem = this.parentNode;
-console.log(thisItem);
-items.forEach(item =>{
-  if (thisItem == item) {
-   thisItem.classList.toggle('open');
-    return;
-  }
-  item.classList.remove('open');
-});
+
+  items.forEach(item =>{
+    if (thisItem == item) {
+     thisItem.classList.toggle('open');
+      return;
+    }
+    item.classList.remove('open');
+  });
 }
 
 questions.forEach(question => question.addEventListener('click', toggleAccordion));
